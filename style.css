@@ -1,0 +1,15 @@
+/* .before-after h6::after{
+    content: '';
+    display: block;
+    width: 150px;
+    height: 2px;
+    background-color: gainsboro;
+    margin-top: -10px;
+}
+.before-after h6::before{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: gainsboro;
+} */

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/aedd1c01b0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.1/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <title>e-commerce</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="hidden md:block pt-9">
+            <div class="container mx-auto flex items-center justify-between ">
+                <!-- logo -->
+                <div>
+                    <a href="" class="w-32 block">
+                        <img class="w-full" src="./images/logo.svg" alt="">
+                    </a>
+                </div>
+                <!-- logo end -->
+                <!-- searchbar -->
+                <div class="flex relative">
+                    <span class="text-gray-400 absolute pt-4 pl-3">
+                        <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                    </span>
+                    <input class="lg:w-96 pl-11 py-3 border border-r-0 border-red-500 rounded-l-md text-xl focus:rign-red-500 focus:border-red-500" type="search" placeholder="Search">
+                    <button class="border border-red-500 bg-red-500 text-white py-3 px-7 rounded-r-md text-xl hover:bg-transparent hover:text-red-500 transition">Search</button>
+                </div>
+                <!-- searchbar end-->
+                <!-- icon -->
+                <div class="flex justify-center space-x-4">
+                    <a href="" class="text-center relative block">
+                        <span>
+                            <i class="fa-solid fa-heart text-2xl"></i>
+                        </span>
+                        <span class="absolute flex justify-center items-center -top-2 right-0 h-5 w-5 bg-red-500 text-white rounded-full">8</span>
+                        <p class="text-sm font-semibold">Wish List</p>
+                    </a>
+                    <a href="" class="text-center relative block">
+                        <span>
+                            <i class="fa-solid fa-bag-shopping text-2xl"></i>
+                        </span>
+                        <span class="absolute flex justify-center items-center -top-2 -right-3 h-5 w-5 bg-red-500 text-white rounded-full">5</span>
+                        <p class="text-sm font-semibold">Cart</p>
+                    </a>
+                    <a href="" class="text-center relative block">
+                        <span>
+                            <i class="fa-solid fa-user text-2xl"></i>
+                        </span>
+                        <p class="text-sm font-semibold">Account</p>
+                    </a>
+                </div>
+                <!-- icon end-->
+            </div>
+        </div>
+
+        <!-- nav -->
+        <nav class="hidden md:block bg-gray-800 mt-5">
+            <div class="container mx-auto flex">
+                <div class="bg-red-500 py-4 flex w-fit px-8 cursor-pointer">
+                    <span class="text-white">
+                        <i class="fa-solid fa-bars text-xl lg:text-2xl"></i>
+                    </span>
+                    <p class="text-base text-white font-semibold pl-3 lg:text-xl">All categories</p>
+                </div>
+
+                <div class="flex justify-between items-center flex-grow">
+                    <div class="pl-16 flex items-center space-x-6">
+                        <a href="index.html" class="text-gray-200 hover:text-white transition text-base font-semibold lg:text-xl">Home</a>
+                        <a href="shop.html" class="text-gray-200 hover:text-white transition text-base font-semibold lg:text-xl">Shop</a>
+                        <a href="" class="text-gray-200 hover:text-white transition text-base font-semibold lg:text-xl">About Us</a>
+                        <a href="" class="text-gray-200 hover:text-white transition text-base font-semibold lg:text-xl">Contact Us</a>
+                    </div>
+                    <a href="login.html" class="text-gray-200 hover:text-white transition text-base font-semibold lg:text-xl">Login/Register</a>
+                </div>
+            </div>
+        </nav>
+        <!-- nav end-->
+
+        <!-- mobile menubar -->
+        <nav class="block sm:hidden py-4 bg-slate-900">
+            <div>
+              <div class="flex justify-between mx-5">
+
+                <button data-collapse-toggle="mobile-menu" type="button" class="border border-slate-500 px-3" aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="text-white">
+                      <i class="fa-solid fa-bars text-2xl"></i>
+                  </span>
+              </button>
+  
+              <div>
+                  <img class="h-6 mt-1" src="./images/logo.svg" alt="">
+              </div>
+
+              </div>
+
+              <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+
+                <div class="flex relative mt-5 mx-5">
+                    <span class="text-gray-400 absolute pt-4 pl-3">
+                        <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                    </span>
+                    <input class="w-full pl-11 py-3 border border-r-0 border-red-500 rounded-l-md text-xl focus:rign-red-500 focus:border-red-500" type="search" placeholder="Search">
+                    <button class="border border-red-500 bg-red-500 text-white py-3 px-7 rounded-r-md text-xl hover:bg-transparent hover:text-red-500 transition">Search</button>
+                </div>
+
+                <!-- icon -->
+                <div class="flex justify-center space-x-4 mt-5">
+                    <a href="" class="text-center relative block">
+                        <span class="text-white">
+                            <i class="fa-solid fa-heart text-2xl"></i>
+                        </span>
+                        <span class="absolute flex justify-center items-center -top-2 right-0 h-5 w-5 bg-red-500 text-white rounded-full">8</span>
+                        <p class="text-sm font-semibold text-white">Wish List</p>
+                    </a>
+                    <a href="" class="text-center relative block">
+                        <span class="text-white">
+                            <i class="fa-solid fa-bag-shopping text-2xl"></i>
+                        </span>
+                        <span class="absolute flex justify-center items-center -top-2 -right-3 h-5 w-5 bg-red-500 text-white rounded-full">5</span>
+                        <p class="text-sm font-semibold text-white">Cart</p>
+                    </a>
+                    <a href="" class="text-center relative block">
+                        <span class="text-white">
+                            <i class="fa-solid fa-user text-2xl"></i>
+                        </span>
+                        <p class="text-sm font-semibold text-white">Account</p>
+                    </a>
+                </div>
+                <!-- icon end-->
+
+                <ul class="flex flex-col mt-4">
+                  <li>
+                    <a href="#" class="block py-2 pr-4 pl-3 text-xl font-semibold text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 pr-4 pl-3 text-xl font-semibold text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Shop</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 pr-4 pl-3 text-xl font-semibold text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About Us</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 pr-4 pl-3 text-xl font-semibold text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 pr-4 pl-3 text-xl font-semibold text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Login/Register</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <!-- mobile menubar end -->
+    </header>
+    <!--header end  -->
+
+    <!-- main -->
+    <main>
+        <div class="mx-5 my-12">
+            <div class="max-w-lg mx-auto drop-shadow-md rounded-lg bg-white p-5">
+                <h3 class="text-2xl font-semibold">LOGIN</h3>
+                <p class="font-semibold text-base text-gray-500 mb-5">Login if you are a returing customer</p>
+                <form action="">
+                    <label class="my-3 block text-base text-gray-600 font-semibold after:content-['*'] after:ml-1 after:text-red-500 after:text-xl" for="">Email Address</label>
+                    <input class="w-full py-3 font-semibold rounded-md border-gray-200 focus:ring-0 focus:border-red-500" type="email" placeholder="masud@gmail.com" required>
+                    <label class="my-3 block text-base text-gray-600 font-semibold after:content-['*'] after:ml-1 after:text-red-500 after:text-xl" for="">Password</label>
+                    <input class="w-full py-3 font-semibold rounded-md border-gray-200 focus:ring-0 focus:border-red-500" type="password" placeholder="type password" required>
+                    <div class="my-7 flex justify-between">
+                        <div class="space-x-2">
+                            <input class="rounded-sm focus:ring-0 text-red-500" type="checkbox" name="" id="terms">
+                            <label for="terms" class="text-base font-semibold"><span class="text-gray-500">Remember Me</span></label>
+                        </div>
+                        <div>
+                            <a href="" class="text-base font-semibold text-red-500">Forgot Password?</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="w-full border border-red-500 bg-red-500 text-white font-semibold py-3 rounded-md hover:bg-transparent hover:text-red-500 transition">LOGIN</button>
+                    </div>
+                </form>
+
+                <div class="before-after">
+                    <h6 class="my-5 text-base font-semibold text-gray-500 text-center">OR LOGIN IN WITH</h6>
+                </div>
+
+                <div class="flex gap-5">
+                    <button class="w-full py-2 text-white font-semibold rounded-md bg-blue-700">FACEBOOK</button>
+                    <button class="w-full py-2 text-white font-semibold rounded-md bg-orange-500">FACEBOOK</button>
+                </div>
+
+                <div class="my-5 text-center">
+                   <p class="text-base font-semibold">
+                    <span class="text-gray-500">Don't have an account?</span> <a href="register.html" class="text-red-500">Register Now</a>
+                   </p>
+                </div>
+            </div>
+                
+            </div>
+        </div>
+    </main>
+    <!-- main end -->
+
+    <!-- footer -->
+    <footer>
+         
+        <div class="py-12 border border-t border-gray-100">
+
+           <div class="container mx-auto">
+               <div class="grid mx-5 grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-5 text-center">
+                   <div>
+                       <p class="text-base font-semibold text-gray-400 mb-3">SOLUTIONS</p>
+                       <div class="space-y-3">
+                           <a href="" class="font-semibold text-gray-500 block hover:text-gray-900">Marketing</a>
+                           <a href="" class="font-semibold text-gray-500 block hover:text-gray-900">Analytics</a>
+                           <a href="" class="font-semibold text-gray-500 block hover:text-gray-900">Commerce</a>
+                           <a href="" class="font-semibold text-gray-500 block hover:text-gray-900">Insights</a>
+                       </div>
+                   </div>
+                   <div>
+                       <p class="text-base font-semibold text-gray-400 mb-3">SUPPORT</p>
+                       <div class="space-y-3">
+                           <a href="" class="font-semibold text-gray-500 block hover:text-gray-900">Pricing</a>
+                           <a href="" class="font-semibold text-gray-500 block hover:text-gray-900">Documentation</a>
+                           <a href="" class="font-semibold text-gray-500 block hover:text-gray-900">Guides</a>
+                           <a href="" class="font-semibold text-gray-500 block hover:text-gray-900">API Status</a>
+                       </div>
+                   </div>
+                   <div>
+                       <p class="text-base font-semibold text-gray-400 mb-3">COMPANY</p>
+                       <div class="space-y-3">
+                           <a href="" class="font-semibold text-gray-500 block hover:text-gray-900">About</a>
+                           <a href="" class="font-semibold text-gray-500 block hover:text-gray-900">Blog</a>
+                           <a href="" class="font-semibold text-gray-500 block hover:text-gray-900">Jobs</a>
+                           <a href="" class="font-semibold text-gray-500 block hover:text-gray-900">Press</a>
+                       </div>
+                   </div>
+                   <div>
+                       <p class="text-base font-semibold text-gray-400 mb-3">LEGAL</p>
+                       <div class="space-y-3">
+                           <a href="" class="font-semibold text-gray-500 block hover:text-gray-900">Claim </a>
+                           <a href="" class="font-semibold text-gray-500 block hover:text-gray-900">Privacy</a>
+                           <a href="" class="font-semibold text-gray-500 block hover:text-gray-900">Policy</a>
+                           <a href="" class="font-semibold text-gray-500 block hover:text-gray-900">Terms</a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+        </div>   
+
+
+       <div class="py-12 border border-t border-gray-100">
+               <div class="container mx-auto ">
+                   <div>
+                       <div class="text-center">
+                           <div class="flex justify-center">
+                               <img class="w-32" src="./images/logo.svg" alt="">
+                           </div>
+                           <p class="text-base text-gray-500 py-3 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facere rem </p>
+                           <div class="space-x-3">
+                               <a href="">
+                                   <i class="fa-brands fa-facebook-f text-gray-400"></i>
+                               </a>
+                               <a href="">
+                                   <i class="fa-brands fa-twitter text-gray-400"></i>
+                               </a>
+                               <a href="">
+                                   <i class="fa-brands fa-instagram text-gray-400"></i>
+                               </a>
+                               <a href="">
+                                   <i class="fa-brands fa-linkedin-in text-gray-400"></i>
+                               </a>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+       </div>
+
+       <div class="bg-gray-800">
+           <div class="container mx-auto">
+               <div class="grid grid-cols-1 text-center gap-5 py-5 md:grid-cols-2">
+                   <p class="text-base font-semibold text-white">© RAFCART - All Rights Reserved</p>
+                   <img class="w-64 h-5 m-auto" src="./images/methods.png" alt="">
+               </div>
+           </div>
+       </div>
+    </footer>
+       <!-- footer end -->
+
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+</body>
+
+</html>
